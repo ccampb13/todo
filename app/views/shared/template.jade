@@ -5,9 +5,27 @@ html
     title= title
     link(href='/css/normalize.css', rel='stylesheet')
     link(href='/css/buttons.css', rel='stylesheet')
+    link(href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css" rel="stylesheet")
     link(href='/less/app.css', rel='stylesheet')
   body
+
+    header
+        h1 Fellow
+
+
+    #page
+      nav
+        .container
+            span
+              a(href='/' class="button button-border") Home
+            span
+              a(href='/priorities' class="button button-border") Priorities
+            span
+              a(href='/tasks/' class="button button-border") Tasks
+
     block content
+
+
 
     script(src='/js/vendor/jquery-2.1.1.js')
     script(src='/js/vendor/lodash-2.4.1.js')
